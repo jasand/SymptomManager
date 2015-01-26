@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:background="@color/color_beige_3a" >
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/check_in_pain_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="Pain status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/check_in_pain_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/list_item_pain_question_text" />
+
+    <RadioGroup
+        android:id="@+id/pain_status_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RadioButton
+            android:id="@+id/pain_status_well"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_pain_answer_1_text" />
+
+        <RadioButton
+            android:id="@+id/pain_status_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_pain_answer_2_text" />
+
+        <RadioButton
+            android:id="@+id/pain_status_severe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_item_pain_answer_3_text" />
+    </RadioGroup>
+
+</RelativeLayout>
+<!-- From: file:/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/src/main/res/layout/list_item_pain_check_in.xml -->

@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/color_beige_2a"
+    android:weightSum="6"
+    tools:context="org.coursera.capstone.syman.DoctorEditActivity" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/color_beige_1a" >
+
+        <ImageView
+            android:id="@+id/doctor_edit_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_icon" />
+
+        <Button
+            android:id="@+id/doctor_edit_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:onClick="launchPhotoCapture"
+            android:text="@string/common_edit_photo_btn_label" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/color_beige_2a" >
+
+        <TextView
+            android:id="@+id/doctor_edit_first_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/doctor_first_name_label" />
+
+        <TextView
+            android:id="@+id/doctor_edit_mid_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_edit_first_name_label"
+            android:text="@string/doctor_middle_name_label" />
+
+        <TextView
+            android:id="@+id/doctor_edit_last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_edit_mid_name_label"
+            android:text="@string/doctor_last_name_label" />
+
+        <TextView
+            android:id="@+id/doctor_edit_mid_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/doctor_edit_mid_name_label"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/doctor_edit_mid_name_label"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/doctor_edit_first_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/doctor_edit_mid_name_text"
+            android:layout_alignLeft="@+id/doctor_edit_mid_name_text"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/doctor_edit_last_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_edit_mid_name_text"
+            android:layout_below="@+id/doctor_edit_mid_name_text"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        android:background="@color/color_beige_1a" >
+
+        <TextView
+            android:id="@+id/doctor_edit_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/doctor_phone_label" />
+
+        <EditText
+            android:id="@+id/doctor_phone_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_phone_label"
+            android:layout_alignBottom="@+id/doctor_edit_phone_label"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/doctor_edit_phone_label"
+            android:ems="10"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/doctor_edit_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_phone_edit_text"
+            android:layout_marginTop="14dp"
+            android:text="@string/doctor_email_label" />
+
+        <EditText
+            android:id="@+id/doctor_email_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_email_label"
+            android:layout_alignBottom="@+id/doctor_edit_email_label"
+            android:layout_alignLeft="@+id/doctor_phone_edit_text"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/doctor_edit_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_email_edit_text"
+            android:layout_marginTop="14dp"
+            android:text="@string/doctor_address_label" />
+
+        <EditText
+            android:id="@+id/doctor_address_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_address_label"
+            android:layout_alignBottom="@+id/doctor_edit_address_label"
+            android:layout_alignLeft="@+id/doctor_email_edit_text"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/doctor_edit_zip_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_address_edit_text"
+            android:layout_marginTop="14dp"
+            android:text="@string/common_edit_zip_label" />
+
+        <EditText
+            android:id="@+id/doctor_zip_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_zip_label"
+            android:layout_alignBottom="@+id/doctor_edit_zip_label"
+            android:layout_alignLeft="@+id/doctor_address_edit_text"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/doctor_edit_state_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_zip_edit_text"
+            android:layout_marginTop="14dp"
+            android:text="@string/common_edit_state_label" />
+
+        <EditText
+            android:id="@+id/doctor_state_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_state_label"
+            android:layout_alignBottom="@+id/doctor_edit_state_label"
+            android:layout_alignLeft="@+id/doctor_zip_edit_text"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/doctor_edit_country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/doctor_state_edit_text"
+            android:layout_marginTop="14dp"
+            android:text="@string/doctor_country_label" />
+
+        <EditText
+            android:id="@+id/doctor_country_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/doctor_edit_country_label"
+            android:layout_alignBottom="@+id/doctor_edit_country_label"
+            android:layout_alignLeft="@+id/doctor_state_edit_text"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/doctor_edit_enable_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="setEditable"
+            android:text="@string/common_edit_enable_btn_label" />
+
+        <Button
+            android:id="@+id/doctor_edit_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="submitDoctorData"
+            android:text="@string/common_edit_submit_btn_label" />
+
+        <Button
+            android:id="@+id/doctor_edit_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="cancelEdit"
+            android:text="@string/common_edit_cancel_btn_label" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+<!-- From: file:/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/src/main/res/layout/activity_doctor_edit.xml -->

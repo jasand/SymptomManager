@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:background="@color/color_beige_3a" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/list_item_no_prescription_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_item_no_prescription_header_text"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/list_item_no_prescription_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/list_item_no_prescription_text" />
+
+</LinearLayout>
+<!-- From: file:/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/src/main/res/layout/list_item_prescriptions_empty.xml -->

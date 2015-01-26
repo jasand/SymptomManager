@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    android:background="@color/color_beige_2a"
+    tools:context="org.coursera.capstone.syman.DoctorMainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="@color/color_beige_1a" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+            
+		    <RelativeLayout
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:paddingBottom="@dimen/activity_vertical_margin"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingRight="@dimen/activity_horizontal_margin"
+		        android:paddingTop="@dimen/activity_vertical_margin"
+		        android:layout_weight="1" >
+
+		        <ImageView
+		            android:id="@+id/doctor_profile_photo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:src="@drawable/user_icon" />		        
+		        		        
+		    </RelativeLayout>   
+		    
+		    <RelativeLayout
+		        android:layout_width="0px"
+		        android:layout_height="match_parent"
+		        android:paddingBottom="@dimen/activity_vertical_margin"
+		        android:paddingLeft="@dimen/activity_horizontal_margin"
+		        android:paddingRight="@dimen/activity_horizontal_margin"
+		        android:paddingTop="@dimen/activity_vertical_margin"
+		        android:layout_weight="3" >
+
+		        <TextView
+		            android:id="@+id/doctor_id_label"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:text="@string/doctor_id_label" />
+
+		        <Button
+		            android:id="@+id/doctor_edit_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignParentTop="true"
+		            android:onClick="onEditClicked"
+		            android:text="@string/doctor_edit_btn_label" />
+
+		        <TextView
+		            android:id="@+id/doctor_id_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/doctor_id_label"
+		            android:layout_toRightOf="@+id/doctor_id_label"
+		            android:layout_marginLeft="8dp"
+		            android:text="1234" />
+
+		        <TextView
+		            android:id="@+id/doctor_name_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@+id/doctor_id_label"
+		            android:text="First Middle Last" />
+
+		        <TextView
+		            android:id="@+id/doctor_phone_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@+id/doctor_name_text"
+		            android:text="555-12345" />
+
+		        <TextView
+		            android:id="@+id/doctor_email_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@+id/doctor_phone_text"
+		            android:text="doctor@hospital.com" />
+		        
+		    </RelativeLayout>		    
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="7"
+        android:background="@color/color_beige_2a" >
+
+        <fragment
+            android:id="@+id/fragment_doctor_list_patients"
+            android:name="org.coursera.capstone.syman.DoctorListPatientsFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            tools:layout="@layout/fragment_doctors_patients" />
+        
+    </RelativeLayout>    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/color_beige_1a" >
+
+        <Button
+            android:id="@+id/doctor_search_checkins_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onSearchCheckInsClicked"
+            android:text="@string/doctor_search_checkin_btn_label" />
+        
+    </RelativeLayout>    
+    
+</LinearLayout>
+<!-- From: file:/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/src/main/res/layout/activity_doctor_main.xml -->

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.coursera.android.capstone.symptommanager.PatientMainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="always"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/action_logout"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_logout" />
+
+</menu>
+<!-- From: file:/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/src/main/res/menu/patient_main.xml -->
