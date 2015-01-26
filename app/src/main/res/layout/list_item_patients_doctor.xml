@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/color_beige_3a"
+    android:weightSum="4" >
+    
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/patient_doctor_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_icon" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/label_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/doctor_first_name_label" />
+
+        <TextView
+            android:id="@+id/label_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_first_name"
+            android:text="@string/doctor_last_name_label" />
+
+        <TextView
+            android:id="@+id/label_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_last_name"
+            android:text="@string/doctor_phone_label" />
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_phone"
+            android:text="@string/doctor_email_label" />
+
+        <TextView
+            android:id="@+id/label_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_email"
+            android:text="@string/doctor_hospital_label" />
+
+        <TextView
+            android:id="@+id/doctor_first_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/label_first_name"
+            android:layout_marginLeft="8dp"
+            android:text="Yoda" />
+
+        <TextView
+            android:id="@+id/doctor_last_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_last_name"
+            android:layout_alignBottom="@+id/label_last_name"
+            android:layout_alignLeft="@+id/doctor_first_name_text"
+            android:text="Jedi" />
+
+        <TextView
+            android:id="@+id/doctor_list_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_last_name_text"
+            android:layout_below="@+id/doctor_last_name_text"
+            android:text="555-12345" />
+
+        <TextView
+            android:id="@+id/doctor_list_email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_list_phone_text"
+            android:layout_below="@+id/doctor_list_phone_text"
+            android:text="yoda@jedi.com" />
+
+        <TextView
+            android:id="@+id/doctor_list_hospital_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_list_email_text"
+            android:layout_below="@+id/doctor_list_email_text"
+            android:text="Kings X Memorial" />
+
+        <TextView
+            android:id="@+id/label_speciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_hospital"
+            android:text="@string/doctor_speciality_label" />
+
+        <TextView
+            android:id="@+id/doctor_list_speciality_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_list_hospital_text"
+            android:layout_below="@+id/doctor_list_hospital_text"
+            android:text="Ratiology" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

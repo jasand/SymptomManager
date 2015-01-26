@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="update_freq_options">
+		<item>10 times a day</item>
+		<item>8 times a day</item>
+		<item>6 times a day</item>
+		<item>4 times a day</item>
+	</string-array>
+	
+    <string-array name="update_freq_values">
+        <item>10</item>
+        <item>8</item>
+        <item>6</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

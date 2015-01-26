@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Symptom Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Login screen -->
+    <string name="title_activity_login">Login</string>
+    <string name="login_username_label">Username</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_button_label">Login</string>
+
+    <!-- Patient main -->
+    <string name="patient_id_label">Patient ID:</string>
+    <string name="patient_first_name_label">First name:</string>
+    <string name="patient_middle_name_label">Middle name:</string>
+    <string name="patient_last_name_label">Last name:</string>
+    <string name="patient_date_of_birth_label">Date of Birth:</string>
+    <string name="patient_address_label">Address:</string>
+    <string name="patient_zip_state_label">Zip/State:</string>
+    <string name="patient_state_label">State:</string>
+    <string name="patient_country_label">Country:</string>
+    <string name="patient_phone_label">Phone:</string>
+    <string name="patient_email_label">Email:</string>
+    <string name="patient_diagnosis_label">Diagnosis:</string>
+    <string name="patient_reminder_freq_label">Reminder frequency:</string>
+    <string name="patient_reminder_night_label">Reminder night setting:</string>
+    <string name="patient_reminder_audio_label">Reminder audio:</string>
+
+    <!-- Common edit -->
+    <string name="common_edit_img_btn_label">Take picture</string>
+    <string name="common_edit_id_label">Patient ID:</string>
+    <string name="common_edit_zip_label">Zip:</string>
+    <string name="common_edit_state_label">State:</string>
+    <string name="common_edit_speciality_label">Speciality:</string>
+    <string name="common_edit_hospital_label">Speciality:</string>
+    <string name="common_edit_photo_btn_label">New selfie</string>
+    <string name="common_edit_enable_btn_label">Edit</string>
+    <string name="common_edit_cancel_btn_label">Cancel</string>
+    <string name="common_edit_submit_btn_label">Submit</string>
+    <string name="common_edit_img_capture_fail_text">Image capture failed</string>
+    <string name="common_edit_img_upload_success_text">Photo uploaded</string>
+    <string name="common_edit_img_upload_fail_text">Photo upload failed.\nCheck your internet connection.</string>
+    <string name="common_edit_img_copy_fail_text">Photo copy failed.\nWill be downloaded from server later.</string>
+    <string name="common_edit_upload_success_text">Data uploaded</string>
+    <string name="common_edit_upload_fail_text">Data upload failed.\nCheck your internet connection.</string>
+
+    <!-- Doctor main -->
+    <string name="doctor_edit_btn_label">Edit</string>
+    <string name="doctor_search_checkin_btn_label">Search checkins by name</string>
+    <string name="doctor_id_label">Doctor ID:</string>
+    <string name="doctor_filter_hint_text">Enter filter text</string>
+    <string name="doctor_first_name_label">First name:</string>
+    <string name="doctor_middle_name_label">Middle name:</string>
+    <string name="doctor_last_name_label">Last name:</string>
+    <string name="doctor_address_label">Address:</string>
+    <string name="doctor_zip_state_label">Zip/State:</string>
+    <string name="doctor_state_label">State:</string>
+    <string name="doctor_country_label">Country:</string>
+    <string name="doctor_phone_label">Phone:</string>
+    <string name="doctor_email_label">Email:</string>
+    <string name="doctor_hospital_label">Hospital:</string>
+    <string name="doctor_speciality_label">Speciality:</string>
+    
+    <!-- Search Check-Ins -->
+    <string name="search_name_edit_text_hint">Enter full name</string>
+    <string name="search_name_button_label">Search for Check-Ins</string>
+    
+    <!-- Check-Ins -->
+    <string name="check_in_header">Symptoms Check-In</string>
+    <string name="list_item_pain_header_text">Pain status</string>
+    <string name="list_item_pain_question_text">How bad is your mouth\npain/sore throat?</string>
+    <string name="list_item_pain_answer_1_text">well-controlled</string>
+    <string name="list_item_pain_answer_2_text">moderate</string>
+    <string name="list_item_pain_answer_3_text">severe</string>
+    <string name="list_item_food_header_text">Food status</string>
+    <string name="list_item_food_question_text">Does your pain stop you\nfrom eating/drinking?</string>
+    <string name="list_item_food_answer_1_text">no</string>
+    <string name="list_item_food_answer_2_text">some</string>
+    <string name="list_item_food_answer_3_text">I can’t eat</string>
+    <string name="list_item_no_prescription_header_text">You have no prescriptions!</string>
+    <string name="list_item_no_prescription_text">Please contact your physician.</string>
+    <string name="list_item_one_prescription_text">Did you take your pain\nmedication?</string>
+    <string name="list_item_multi_prescription_text">Did you take your</string>
+    
+    <!-- Check-In list -->
+    <string name="list_item_check_in_time_label">Check-In time:</string>
+    <string name="list_item_check_in_pain_stat">Pain status:</string>
+    <string name="list_item_check_in_food_stat">Problems eating:</string>
+    
+    <!-- Edit prescriptions -->
+    <string name="edit_prescriptions_header_text">Prescriptions</string>
+    <string name="edit_prescriptions_info_text">Click to edit, long click to delete</string>
+    <string name="edit_medications_header_text">Medications</string>
+    <string name="edit_medications_info_text">Drag to prescriptions to add.</string>
+    <string name="edit_prescriptions_empty_list_error">No medications found on server!</string>
+    <string name="edit_prescriptions_download_error">Medication download error.\nCheck your network connection.</string>
+    <string name="edit_prescriptions_usage_info_text">Edit prescription usage:</string>
+    <string name="edit_prescriptions_delete_text">Are you sure you want to delete the prescription?</string>
+    <string name="edit_prescriptions_add_text">Add prescription usage:</string>
+
+    <!-- Settings -->
+    <string name="action_settings_label">Settings</string>
+    <string name="patient_settings_important_header">IMPORTANT NOTE</string>
+    <string name="patient_settings_important_text">Frequency calculated from midnight, unless night settings chosen, then end of night is used as starting point.</string>
+    <string name="patient_settings_reminder_header">REMINDER FREQUENCY</string>
+    <string name="patient_settings_night_header">NIGHT TIME</string>
+    <string name="patient_settings_night_switch">Night time pause</string>
+    <string name="patient_settings_alarms_header">ALARMS</string>
+    <string name="patient_settings_audio_switch">Audio on/off</string>
+    <string name="patient_settings_schedule_header">CURRENT SCHEDULE</string>
+    <string name="patient_settings_schedule_text_1">06:00		08:00		10:00		12:00		14:00</string>
+    <string name="patient_settings_schedule_text_2">16:00		18:00		20:00		22:00		24:00</string>
+    <string name="patient_settings_schedule_text_3">02:00		04:00</string>
+
+    <!-- Screen titles -->
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_patient_main">Patient</string>
+    <string name="title_activity_doctor_main">Doctor</string>
+    <string name="title_activity_patient_settings">Settings</string>
+    <string name="title_activity_patient_edit">Edit patient</string>
+    <string name="title_activity_patient_view_doctor">Doctors</string>
+    <string name="title_activity_patient_view_checkins">Checkins</string>
+    <string name="title_activity_patient_checkin">Checkin</string>
+    <string name="title_activity_doctor_edit">Edit Doctor</string>
+    <string name="title_activity_doctor_search_check_ins">Search Check-Ins</string>
+    <string name="title_activity_doctor_view_patient">View Patient</string>
+    <string name="title_activity_edit_prescriptions">Edit Prescriptions</string>
+
+</resources>

@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/color_beige_2a"
+    tools:context="org.coursera.capstone.syman.PatientSettingsActivity" >
+
+    <TextView
+        android:id="@+id/patient_settings_important_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold"
+        android:text="IMPORTANT NOTE" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/patient_settings_important_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Frequency calculated from midnight, unless night settings chosen, then end of night is used as starting point." />
+
+    <TextView
+        android:id="@+id/patient_settings_reminder_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold"
+        android:text="REMINDER FREQUENCY" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <Spinner
+        android:id="@+id/patient_settings_frequency_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="36dp" />
+
+    <TextView
+        android:id="@+id/patient_settings_night_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold"
+        android:text="NIGHT TIME" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <Switch
+        android:id="@+id/patient_settings_night_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Night time pause" />
+    
+    <Spinner
+        android:id="@+id/patient_settings_night_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="36dp" />
+    
+    <TextView
+        android:id="@+id/patient_settings_alarms_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold"
+        android:text="ALARMS" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <Switch
+        android:id="@+id/patient_settings_audio_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Audio on/off" />
+
+    <TextView
+        android:id="@+id/patient_settings_schedule_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold"
+        android:text="CURRENT SCHEDULE" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="6dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/patient_settings_schedule_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="06:00		08:00		10:00		12:00		14:00" />
+
+        <TextView
+            android:id="@+id/patient_settings_schedule_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/patient_settings_schedule_text_1"
+            android:layout_below="@+id/patient_settings_schedule_text_1"
+            android:text="16:00		18:00		20:00		22:00		24:00" />
+
+        <TextView
+            android:id="@+id/patient_settings_schedule_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/patient_settings_schedule_text_2"
+            android:layout_below="@+id/patient_settings_schedule_text_2"
+            android:text="02:00		04:00" />
+
+    </RelativeLayout>
+
+</LinearLayout>

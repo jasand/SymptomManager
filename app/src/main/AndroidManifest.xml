@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.coursera.capstone.syman"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PatientMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DoctorMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_doctor_main"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".PatientSettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_settings"
+            android:parentActivityName=".PatientMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.PatientMainActivity" />
+        </activity>
+        <activity
+            android:name=".PatientEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_edit"
+            android:parentActivityName=".PatientMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.PatientMainActivity" />
+        </activity>
+        <activity
+            android:name=".PatientViewDoctorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_view_doctor"
+            android:parentActivityName=".PatientMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.PatientMainActivity" />
+        </activity>
+        <activity
+            android:name=".PatientViewCheckinsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_view_checkins"
+            android:parentActivityName=".PatientMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.PatientMainActivity" />
+        </activity>
+        <activity
+            android:name=".PatientCheckinActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_patient_checkin"
+            android:parentActivityName=".PatientMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.PatientMainActivity" />
+        </activity>
+        <activity
+            android:name=".DoctorEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_doctor_edit"
+            android:parentActivityName=".DoctorMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.DoctorMainActivity" />
+        </activity>
+        <activity
+            android:name=".DoctorSearchCheckInsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_doctor_search_check_ins"
+            android:parentActivityName=".DoctorMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.DoctorMainActivity" />
+        </activity>
+        <activity
+            android:name=".DoctorViewPatientActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_doctor_view_patient"
+            android:parentActivityName=".DoctorMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.DoctorMainActivity" />
+        </activity>
+        <activity
+            android:name=".EditPrescriptionsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_edit_prescriptions"
+            android:parentActivityName=".DoctorViewPatientActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.coursera.capstone.syman.DoctorViewPatientActivity" />
+        </activity>
+        <service android:name=".service.AlarmPollerService"></service>
+        <service android:name=".service.ReminderService"></service>
+    </application>
+
+</manifest>
