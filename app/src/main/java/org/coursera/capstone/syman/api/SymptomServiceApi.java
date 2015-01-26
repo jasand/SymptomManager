@@ -141,4 +141,7 @@ public interface SymptomServiceApi {
 	
 	@GET(ALARMS_BASE_PATH)
 	public List<Patient> getPatientsWithAlarms();
+
+    //
+    // Endring for test-commit
 }
