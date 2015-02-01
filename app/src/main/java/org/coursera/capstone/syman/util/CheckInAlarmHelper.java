@@ -30,9 +30,11 @@ public class CheckInAlarmHelper {
 //		alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
 //				System.currentTimeMillis() + millisecToNextAlarm,
 //				millisecInterval , pendingIntent);
+
+        // Set 5 min intervals for demo
 		alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
-				System.currentTimeMillis() + 120000l,
-				120000l , pendingIntent);
+				System.currentTimeMillis() + 300000l,
+				300000l , pendingIntent);
 	}
 	
 	

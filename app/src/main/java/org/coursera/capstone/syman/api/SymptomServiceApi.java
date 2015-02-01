@@ -24,7 +24,8 @@ import retrofit.http.Query;
 import retrofit.mime.TypedFile;
 
 public interface SymptomServiceApi {
-	public final static String SYMPTOM_SERVICE_BASE_URL = "https://cloud9.dnsalias.com:8443";
+    public final static String SYMPTOM_SERVICE_BASE_URL = "https://192.168.1.4:8443";
+	//public final static String SYMPTOM_SERVICE_BASE_URL = "https://cloud9.dnsalias.com:8443";
 	public final static String CLIENT_ID = "mobile";
 	
 	public final static String TOKEN_PATH = "/oauth/token";

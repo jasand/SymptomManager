@@ -177,11 +177,13 @@ public class DoctorViewPatientActivity extends Activity {
 	
 	private void refreshPatientPhoto() {
 		Uri photoUri = UserPhotoFileHandler.findPhotoForUserId(mPatientCompact.getUserid());
-		if (photoUri != null) {
-			ImageView imageView = (ImageView) findViewById(R.id.patient_profile_image);
-			imageView.setImageURI(photoUri);
-			return;
-		} else {
+
+        // Always load photo fro demo
+//		if (photoUri != null) {
+//			ImageView imageView = (ImageView) findViewById(R.id.patient_profile_image);
+//			imageView.setImageURI(photoUri);
+//			return;
+//		} else {
 			final SymptomServiceApi symptomService = SymptomServiceMgr.getServiceOrShowLogin(this);
 			
 			CallableTask.invoke(new Callable<Uri>() {
@@ -225,7 +227,7 @@ public class DoctorViewPatientActivity extends Activity {
 							Toast.LENGTH_LONG).show();
 				}
 			});
-		}
+//		}
 	}
 	
 	

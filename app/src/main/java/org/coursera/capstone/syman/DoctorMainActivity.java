@@ -49,12 +49,14 @@ public class DoctorMainActivity extends ActionBarActivity {
 		PendingIntent pendingIntent = IntentFactory.createAlarmPollerServicePendingIntent(this);
 		// Just to make sure we don't add a new alarm when one exist
 		alarmManager.cancel(pendingIntent);
-		alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-				SystemClock.elapsedRealtime() + 900000l,
-				900000l, pendingIntent);
 //		alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-//				SystemClock.elapsedRealtime() + 90000l,
-//				90000l, pendingIntent);
+//				SystemClock.elapsedRealtime() + 900000l,
+//				900000l, pendingIntent);
+
+        // Set polling interval to 3 minutes for demo
+		alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+				SystemClock.elapsedRealtime() + 18000l,
+				180000l, pendingIntent);
 	}
 	
 	@Override
@@ -162,12 +164,14 @@ public class DoctorMainActivity extends ActionBarActivity {
 	
 	private void refreshDoctorPhoto() {
 		Uri photoUri = UserPhotoFileHandler.findPhotoForUserId(mLoggedInUserId);
-		if (photoUri != null) {
-			ImageView imageView = (ImageView) findViewById(R.id.doctor_profile_photo);
-			imageView.setImageResource(R.drawable.user_icon);
-			imageView.setImageURI(photoUri);
-			return;
-		} else {
+
+        // Always load photo in demo
+//		if (photoUri != null) {
+//			ImageView imageView = (ImageView) findViewById(R.id.doctor_profile_photo);
+//			imageView.setImageResource(R.drawable.user_icon);
+//			imageView.setImageURI(photoUri);
+//			return;
+//		} else {
 			final SymptomServiceApi symptomService = SymptomServiceMgr.getServiceOrShowLogin(this);
 			
 			CallableTask.invoke(new Callable<Uri>() {
@@ -211,7 +215,7 @@ public class DoctorMainActivity extends ActionBarActivity {
 							Toast.LENGTH_LONG).show();
 				}
 			});
-		}
+//		}
 	}
 	
 	

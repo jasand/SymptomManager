@@ -2,25 +2,18 @@
 <items version="2" >
 
     <item
+        jar="/Users/jan.arne.sandnes/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/gson-2.3.1-f5ae4f55dea48fc93ccaa82f787545a7e94b608a.jar" />
+    </item>
+    <item
         jar="/Users/jan.arne.sandnes/Development/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
         <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-4c76ebb7638533da64d5d8ba349b5861b9ce1f0b.jar" />
-    </item>
-    <item
-        jar="/Users/jan.arne.sandnes/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/gson-2.2.4-bb80457e276119954d01ee91247677fb6f66122e.jar" />
-    </item>
-    <item
-        jar="/Users/jan.arne.sandnes/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.6.1/efb0a36546aa8857ab8df358b106c1817e03cbee/retrofit-1.6.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="efb0a36546aa8857ab8df358b106c1817e03cbee">
-        <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/retrofit-1.6.1-9eb59dfb9ad23d390934290c395c4b3b7a63ff7f.jar" />
     </item>
     <item
         jar="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
@@ -49,6 +42,13 @@
         revision="21.1.2"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
         <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-f6c4bb6228d9bc6cf6e3bdd2ff285ec49e089c78.jar" />
+    </item>
+    <item
+        jar="/Users/jan.arne.sandnes/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/jan.arne.sandnes/AndroidStudioProjects/SymptomManager/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-a9bfc7d494772ebcd545c9bf2cfcac09c01ee4ef.jar" />
     </item>
 
 </items>

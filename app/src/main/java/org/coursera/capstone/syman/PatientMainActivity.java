@@ -292,13 +292,15 @@ public class PatientMainActivity extends ActionBarActivity {
 					Toast.LENGTH_LONG).show();
 //			return;
 		}
-		Uri photoUri = UserPhotoFileHandler.findPhotoForUserId(mLoggedInUserId);
-		if (photoUri != null) {
-			ImageView imageView = (ImageView) findViewById(R.id.patient_profile_image);
-			imageView.setImageResource(R.drawable.user_icon);
-			imageView.setImageURI(photoUri);
-			return;
-		} else {
+
+        // Always fetch photo for demo
+//		Uri photoUri = UserPhotoFileHandler.findPhotoForUserId(mLoggedInUserId);
+//		if (photoUri != null) {
+//			ImageView imageView = (ImageView) findViewById(R.id.patient_profile_image);
+//			imageView.setImageResource(R.drawable.user_icon);
+//			imageView.setImageURI(photoUri);
+//			return;
+//		} else {
 			
 			final SymptomServiceApi symptomService = SymptomServiceMgr.getServiceOrShowLogin(this);
 			
@@ -345,6 +347,6 @@ public class PatientMainActivity extends ActionBarActivity {
 				}
 			});
 			
-		}
+//		}
 	}
 }
