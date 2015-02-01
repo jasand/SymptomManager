@@ -276,7 +276,7 @@ public class DoctorViewPatientActivity extends Activity {
 		blackPaint.setColor(Color.BLACK);
 		blackPaint.setStyle(Paint.Style.STROKE);
 		painPaint.setColor(Color.MAGENTA);
-		foodPaint.setColor(Color.CYAN);
+		foodPaint.setColor(Color.BLUE);
 	}
 	
 	private void paintBackgroundGrid(Canvas canvas) {

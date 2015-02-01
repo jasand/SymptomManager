@@ -55,7 +55,7 @@ public class DoctorMainActivity extends ActionBarActivity {
 
         // Set polling interval to 3 minutes for demo
 		alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-				SystemClock.elapsedRealtime() + 18000l,
+				SystemClock.elapsedRealtime() + 180000l,
 				180000l, pendingIntent);
 	}
 	

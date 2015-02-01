@@ -20,6 +20,7 @@ public class IntentFactory {
 	
 	public static PendingIntent createDoctorHomePendingIntent(Context context) {
 		Intent doctorHomeIntent = new Intent(context, DoctorMainActivity.class);
+        doctorHomeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		PendingIntent doctorHomePendingIntent = PendingIntent.getActivity(context,
 				0, doctorHomeIntent, Intent.FLAG_ACTIVITY_NEW_TASK);
 		return doctorHomePendingIntent;
